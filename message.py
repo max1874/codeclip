@@ -1,59 +1,112 @@
-import os
 import sqlite3
 import re
 import time
-import pyperclip
 from pathlib import Path
+import pyperclip
+from typing import Optional
 
-def get_latest_message_text(db_path):
-    # Connect to database (read-only)
-    # Use URI mode to open read-only connection: "file:{}?mode=ro"
-    # Reference: https://sqlite.org/c3ref/open.html
-    uri = f"file:{db_path}?mode=ro"
-    conn = sqlite3.connect(uri, uri=True)
-    cursor = conn.cursor()
-    
-    # message table typically has a text field storing message content
-    # date field stores timestamp in Apple-specific format
-    # Here we simply get the latest message by ROWID or date DESC
-    cursor.execute("SELECT text FROM message ORDER BY date DESC LIMIT 1;")
-    row = cursor.fetchone()
-    
-    conn.close()
-    
-    if row and row[0]:
-        return row[0]
-    return None
+class Message:
+    def __init__(self, message_date: int, text: str):
+        self.message_date = message_date
+        self.text = text
 
-def extract_verification_code(text):
-    # Use regex to match 4-8 consecutive digits
-    pattern = r"\b\d{4,8}\b"
-    matches = re.findall(pattern, text)
-    if matches:
-        # Assume first match is the desired verification code
-        return matches[0]
-    return None
-
-def copy_to_clipboard(text):
-    pyperclip.copy(text)
-
-def main():
-    db_path = str(Path.home() / "Library" / "Messages" / "chat.db")
-    last_copied_code = None
+class SMSCodeExtractor:
+    def __init__(self):
+        self.db_path = str(Path.home() / "Library/Messages/chat.db")
+        self.db = None
+        self.update_time = 0
+        # 默认的验证码匹配模式：4, 5, 6位数字
+        self.code_pattern = r'(?<!\d)(\d{4}|\d{5}|\d{6})(?!\d)'
     
-    while True:
-        latest_msg = get_latest_message_text(db_path)
-        if latest_msg:
-            code = extract_verification_code(latest_msg)
-            if code and code != last_copied_code:
-                copy_to_clipboard(code)
-                print(f"Found new verification code and copied to clipboard: {code}")
-                last_copied_code = code
-        else:
-            print("No latest message found or message content is empty.")
+    def open_database(self) -> bool:
+        try:
+            self.db = sqlite3.connect(self.db_path)
+            return True
+        except sqlite3.Error as e:
+            print(f"Error accessing Messages database: {e}")
+            print("Please grant Full Disk Access permission in System Preferences > Security & Privacy")
+            return False
+    
+    def get_latest_message(self) -> Optional[Message]:
+        if not self.db:
+            return None
+            
+        sql = """
+        SELECT
+            (message.date / 1000000000 + 978307200) AS message_date,
+            message.text
+        FROM
+            message
+                LEFT JOIN chat_message_join
+                        ON chat_message_join.message_id = message.ROWID
+                LEFT JOIN chat
+                        ON chat.ROWID = chat_message_join.chat_id
+                LEFT JOIN handle
+                        ON message.handle_id = handle.ROWID
+        WHERE
+            is_from_me = 0
+            AND text IS NOT NULL
+            AND length(text) > 0
+            AND (
+                text GLOB '*[0-9][0-9][0-9][0-9]*'
+                OR text GLOB '*[0-9][0-9][0-9][0-9][0-9]*'
+                OR text GLOB '*[0-9][0-9][0-9][0-9][0-9][0-9]*'
+                OR text GLOB '*[0-9][0-9][0-9][0-9][0-9][0-9][0-9]*'
+                OR text GLOB '*[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]*'
+            )
+        ORDER BY
+            message.date DESC
+        LIMIT 1
+        """
         
-        # Check every 10 seconds
-        time.sleep(5)
+        try:
+            cursor = self.db.cursor()
+            cursor.execute(sql)
+            row = cursor.fetchone()
+            if row:
+                return Message(int(row[0]), row[1])
+        except sqlite3.Error as e:
+            print(f"Database error: {e}")
+        return None
+    
+    def extract_code(self, message: Message) -> Optional[str]:
+        if not message:
+            return None
+        
+        try:
+            match = re.search(self.code_pattern, message.text)
+            if match:
+                return match.group(1)
+        except re.error:
+            print("Invalid regex pattern")
+        
+        return None
+    
+    def run(self):
+        if not self.open_database():
+            return
+        
+        print("SMS Code Extractor is running...")
+        print("Monitoring for new messages...")
+        
+        try:
+            while True:
+                message = self.get_latest_message()
+                # print(message.text)
+                if message and message.message_date != self.update_time:
+                    self.update_time = message.message_date
+                    code = self.extract_code(message)
+                    if code:
+                        pyperclip.copy(code)
+                        print(f"Found new code: {code} (copied to clipboard)")
+                time.sleep(5)  # 检查间隔2秒
+                
+        except KeyboardInterrupt:
+            print("\nStopping SMS Code Extractor...")
+        finally:
+            if self.db:
+                self.db.close()
 
 if __name__ == "__main__":
-    main()
+    extractor = SMSCodeExtractor()
+    extractor.run()
