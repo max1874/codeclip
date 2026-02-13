@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8094643f-3ca0-4f6c-bf38-7a6e69de7d48" name="Changes" comment="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh` scripts to manage the service" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/Cellar/go/1.24.5/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lin-youxiang"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:lin-youxiang/codeclip.git",
+    "accountId": "aca52bf3-922d-4d2d-9a85-dd77c5c729ef"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="32GeeUOWPWcVfogiXk9v5s8ppbC" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/ritsu/Projects/Repo/codeclip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-f466f9b0953e-3d2cccfc42a2-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-252.23892.449" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-GO-252.23892.449" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8094643f-3ca0-4f6c-bf38-7a6e69de7d48" name="Changes" comment="" />
+      <created>1757051432080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757051432080</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;-" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py`" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;-" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh`" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh`" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh` scripts" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh` scripts to manage" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh` scripts to manage the" />
+    <MESSAGE value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh` scripts to manage the service" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: remove old installation and run scripts, add new README files and scripts&#10;&#10;- Deleted `install.sh`, `run-script.sh`, and `uninstall.sh`&#10;- Added `README.md` and `README_CN.md` for documentation&#10;- Added `requirements.txt` for dependencies&#10;- Added `message.py` for SMS code extraction functionality&#10;- Added `start.sh` and `stop.sh` scripts to manage the service" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
